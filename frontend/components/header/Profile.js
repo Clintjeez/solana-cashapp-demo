@@ -10,9 +10,9 @@ const Profile = ({ setModalOpen, avatar, userAddress }) => {
             </div>
 
             <div className="flex flex-col items-center space-y-1">
-                <p className="font-semibold text-white">{truncate(userAddress)}</p>
+                <p className="font-semibold text-white">{truncate(userAddress.toString())}</p>
 
-                <p className="text-sm font-light italic text-gray-100">${truncate(userAddress)}</p>
+                <p className="text-sm font-light italic text-gray-100">${truncate(userAddress.toString())}</p>
             </div>
         </div>
     )
